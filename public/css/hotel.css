@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Scheherazade+New:wght@400;700&display=swap');
+h1{
+   text-align: center;
+   font-family: "Times New Roman";
+   font-size: 4rem;
+   margin-top: 20px;
+   text-shadow: 3px 3px 20px;
+   text-decoration: wavy;
+}
+.hotel-card{
+   width: 350px;
+   min-height: 400px;
+   padding: 25px;
+   border-radius: 20px;
+   font-family: "Poppins";
+   margin: 20px 40px;
+   box-shadow: 2px 2px 25px rgb(193, 192, 192);
+   transition: 0.5s ease-in-out;
+}
+
+.hotel-card:hover{
+   box-shadow: 3px 3px 50px rgb(150, 150, 150);
+}
+
+.hotel-card img{
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   z-index: 1;
+}
+
+.hotel-card p {
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 1.5;
+   height: 188px;
+   margin-top: 5px;
+   padding: 45px 25px;
+   background: rgba(137, 137, 137, 0.78);
+   text-align: center;
+}
+
+.hotel-card:hover  img{
+   z-index: -1;
+}
+
+.hotel-card h3{
+   margin-top: 2.5rem;
+   font-weight: 700;
+}
+
+.hotel-card:hover .hotel-card p {
+   z-index:2
+}
+
+.hotel-card ul{
+   font-family: "Poppins";
+   font-weight: 600;
+}
+
+.hotel-card .loc{
+   float: right;
+   font-size: 13px;
+   color: gray;
+}
+
+.hotel button{
+   width: 50%;
+   margin: 0 auto;
+}

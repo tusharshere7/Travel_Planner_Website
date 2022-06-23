@@ -1,0 +1,31 @@
+<%-include('header') %>
+   <h1 class="mb-5">TOURIST ATTRACTION</h1>
+   <div class="container">
+      <div class="row">
+         <% for(var i=0;i<spots.length;i++){%>
+            <div class="location-card col-lg-4">
+               <div class="info">
+                  <p class="name">
+                     <%=spots[i].name%>,<span>
+                           <%=spots[i].city%>
+                        </span>
+                  </p>
+                  <p class="about">
+                     <%=spots[i].about%>
+                  </p>
+                  <p class="timing">
+                     <%=spots[i].timing%>
+                  </p>
+                  <p class="entry-fee">
+                     <%=spots[i].entry%>
+                  </p>
+               </div>
+               <div class="img">
+                  <img src=<%=spots[i].image%>
+                  alt=<%=spots[i].name%>>
+               </div>
+            </div>
+            <%}%>
+      </div>
+   </div>
+   <%-include('footer') %>

@@ -1,0 +1,76 @@
+<!-- <% include('header') %>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="travel-card">
+            <i class="fas fa-car"></i>
+         </div>
+      </div>
+   </div>
+   <% include('footer') %> -->
+
+<%- include('header') %>
+   <div class="container">
+      <div class="rental-container row">
+         <div class="col-lg-4">
+            <div class="travel-card">
+               <i class="fas fa-car icon"></i>
+               <p class="heading">RENT A CAB</p>
+               <p class="description">Choose from a wide range of vehicles for your ultimate comfort</p>
+               <button class="btn btn-outline-primary book-cab">BOOK NOW</button>
+            </div>
+         </div>
+
+
+         <div class="col-lg-4">
+            <div class="travel-card">
+               <i class="fas fa-plane icon"></i>
+               <p class="heading">BOOK A FLIGHT</p>
+               <p class="description">Choose from a wide range of vehicles for your ultimate comfort</p>
+               <button class="btn btn-outline-primary book-plane">BOOK NOW</button>
+            </div>
+         </div>
+
+         <div class="col-lg-4">
+            <div class="travel-card">
+               <i class="fas fa-train icon"></i>
+               <p class="heading">CATCH A TRAIN</p>
+               <p class="description">Choose from a wide range of vehicles for your ultimate comfort</p>
+               <button class="btn btn-outline-primary book-train">BOOK NOW</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="book-cab-modal modal">
+      <form class="modal-content form" action="/travel-booking" method="post">
+         <h1>BOOK A CAB</h1>
+         <input type="hidden" name="type" value="Car" />
+         <input type="text" name="personName" placeholder="Name" required />
+         <input type="date" name="dateOfBooking" placeholder="Enter Date of Booking" required />
+         <input type="number" name="numberOfPerson" placeholder="Number of Persons Travelling" required>
+         <button type="submit">SUBMIT</button>
+      </form>
+   </div>
+
+   <div class="book-flight-modal modal">
+      <form class="modal-content form" action="/travel-booking" method="post">
+         <h1>BOOK A FLIGHT</h1>
+         <input type="hidden" name="type" value="Flight" />
+         <input type="text" name="personName" placeholder="Name" required />
+         <input type="date" name="dateOfBooking" placeholder="Enter Date of Booking" required />
+         <input type="number" name="numberOfPerson" placeholder="Number of Persons Travelling" min="1">
+         <button type="submit">SUBMIT</button>
+      </form>
+   </div>
+
+   <div class="book-train-modal modal">
+      <form class="modal-content form" action="/travel-booking" method="post">
+         <h1>BOOK A TRAIN</h1>
+         <input type="hidden" name="type" value="Train" />
+         <input type="text" name="personName" placeholder="Name" required />
+         <input type="date" name="dateOfBooking" placeholder="Enter Date of Booking" required />
+         <input type="number" name="numberOfPerson" placeholder="Number of Persons Travelling" min="1">
+         <button type="submit">SUBMIT</button>
+      </form>
+   </div>
+   <%- include('footer') %>

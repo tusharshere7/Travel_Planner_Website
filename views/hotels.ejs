@@ -1,0 +1,43 @@
+<%- include('header') %>
+   <h1>HOTELS</h1>
+   <div class="container">
+      <div class="row">
+
+         <% for(let i=0;i<hotels.length; i++){%>
+            <div class="hotel-card col-lg-4">
+               <img src=<%=hotels[i].img%> alt="">
+               <p>
+                  <%=hotels[i].info%>
+               </p>
+               <span class="loc"><i class="fas fa-map-marker-alt"></i>
+                  <%=hotels[i].location%>, India
+               </span>
+               <h3 class="name">
+                  <%=hotels[i].name%>
+               </h3>
+               <ul>
+                  <li>
+                     <%=hotels[i].bhk%> Rooms
+                  </li>
+                  <li>
+                     <%=hotels[i].dist%>
+                  </li>
+                  <li>
+                     <%=hotels[i].price%>
+                  </li>
+                  <li>
+                     <%for(var j=0; j < 3; j++){%>
+                        <span><i class="fas fa-star"></i></span>
+                        <%}%>
+                  </li>
+               </ul>
+               <div class="d-grid">
+                  <button class="btn btn-outline-primary">Book Now</button>
+               </div>
+            </div>
+            <%}%>
+      </div>
+   </div>
+
+   <a href="/travel-booking">BOOK YOUR TRAVEL</a>
+   <%- include('footer') %>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Scheherazade+New:wght@400;700&display=swap');
+
+.rental-container{
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: "Poppins";
+}
+
+.travel-card{
+   border: 2px inset #000;
+   padding: 35px;
+   border-radius: 20px;
+   transition: 1s ease-in-out;
+   margin: 20px;
+}
+
+.travel-card:hover{
+   box-shadow: 10px 10px 20px #000;
+}
+
+.icon{
+   font-size: 4.2rem;
+   margin-bottom: 20px;
+   background: rgb(248, 178, 178);
+   padding: 30px;
+   border-radius: 50%;
+}
+
+.icon.fa-plane{
+   transform: rotate(-90deg);
+}
+
+.rental-container .heading{
+   font-size: 2rem;
+   font-weight: 700;
+   font-family: "Poppins";
+}
+
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   padding: 10vh 0 0 30vw;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+   
+ }
+
+ .modal-content{
+    margin-top: 7vh;
+    width: 40vw;
+    min-height: 50vh;
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    transition: 0.7s ease-in-out;
+ }
+
+.book-cab-modal .modal-content, .book-flight-modal .modal-content, .book-train-modal .modal-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.book-cab-modal .modal-content h1, .request-modal-nav h1,
+.book-flight-modal .modal-content h1, .book-train-modal .modal-content h1{
+   text-align: center;
+   font-size: 3rem;
+   color: rgb(0, 0, 0);
+   margin-bottom: 3%;
+}
+
+ .book-cab-modal .modal-content input, .request-modal-nav .field input,
+ .book-flight-modal .modal-content input, .book-train-modal .modal-content input{
+    display: inline-block;
+    width: 60%;
+    height: 40px;
+    padding: 4px 0 0 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+ }
+
+.book-cab-modal .modal-content span{
+   width: 60%;
+   height: 45px;
+   font-size: 1.2rem;
+   padding: 5px 0 0 10px;
+   font-weight: 600;
+   color: #333;
+   background: #fff;
+   border-radius: 20px;
+}     
+
+ input::placeholder{
+    font-size: 1.2rem;
+    font-weight: 500;
+ }
+
+ .book-cab-modal .modal-content button, .request-modal-nav .field button,
+ .book-flight-modal .modal-content button, .book-train-modal .modal-content button{
+    height: 35px;
+    width: 10vw;
+    padding: 5px 20px;
+    margin-top: 5%;
+    border:none;
+    border-radius: 20px;
+    color: #444;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: rgb(252, 163, 17);
+    cursor: pointer;
+    margin-bottom: 3%;
+ }
+
+
+ /* Confirm rentals styling */
+ .confirm-rental-container{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    font-size: 20px;
+    background: rgb(221, 238, 112);
+}
+
+ .confirm-rental-container .label{
+    font-weight: bold;
+    margin-right: 3rem;
+ }
+
+ .success-symbol{
+    margin-top: 20px;
+    font-size: 10rem;
+    color: green;
+    text-align: center;
+ }
